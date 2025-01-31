@@ -17,12 +17,12 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: '18'
-        registry-url: 'https://repo.huaweicloud.com/repository/npm/'
+        registry-url: 'https://registry.harmonyos.com'
     
     - name: Install dependencies
       run: |
-        npm install -g @ohos/hvigor --registry=https://repo.huaweicloud.com/repository/npm/
-        npm install --registry=https://repo.huaweicloud.com/repository/npm/
+        npm install -g @ohos/hvigor --registry=https://registry.harmonyos.com
+        npm install --registry=https://registry.harmonyos.com
     
     - name: Build
       run: hvigor --mode module --product default --target default
