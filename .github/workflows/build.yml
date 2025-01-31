@@ -21,8 +21,8 @@ jobs:
     
     - name: Install dependencies
       run: |
-        npm install @ohos/hvigor --save
-        npm install @ohos/hvigor-ohos-plugin --save
+        npm install -g @ohos/hvigor
+        npm install -g @ohos/hvigor-ohos-plugin
     
     - name: Build
       run: hvigor --mode module --product default --target default
