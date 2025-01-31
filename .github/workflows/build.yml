@@ -17,12 +17,12 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: '18'
-        registry-url: 'https://registry.harmonyos.com'
+        registry-url: 'https://repo.harmonyos.com/npm'
     
     - name: Install dependencies
       run: |
-        npm install -g @ohos/hvigor --registry=https://registry.harmonyos.com
-        npm install --registry=https://registry.harmonyos.com
+        npm install @ohos/hvigor --save
+        npm install @ohos/hvigor-ohos-plugin --save
     
     - name: Build
       run: hvigor --mode module --product default --target default
