@@ -27,7 +27,7 @@ jobs:
       run: hvigor --mode module --product default --target default
     
     - name: Upload build artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: app-build
         path: entry/build/default/outputs/*.hap
